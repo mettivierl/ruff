@@ -58,5 +58,21 @@ repos:
         types: [rust]
         pass_filenames: false # This makes it a lot faster
 
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff-format
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+        types_or: [python, pyi]
+        require_serial: true
+
+  # Prettier
+  - repo: https://github.com/rbubley/mirrors-prettier
+    rev: v3.3.3
+    hooks:
+      - id: prettier
+        types: [yaml]
+
 ci:
   skip: [cargo-fmt, dev-generate-all]
