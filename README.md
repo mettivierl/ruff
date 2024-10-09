@@ -382,33 +382,3 @@ or feel free to [**open a new one**](https://github.com/astral-sh/ruff/issues/ne
 You can also ask for help on [**Discord**](https://discord.com/invite/astral-sh).
 
 ## Acknowledgements<a id="acknowledgements"></a>
-
-Ruff's linter draws on both the APIs and implementation details of many other
-tools in the Python ecosystem, especially [Flake8](https://github.com/PyCQA/flake8), [Pyflakes](https://github.com/PyCQA/pyflakes),
-[pycodestyle](https://github.com/PyCQA/pycodestyle), [pydocstyle](https://github.com/PyCQA/pydocstyle),
-[pyupgrade](https://github.com/asottile/pyupgrade), and [isort](https://github.com/PyCQA/isort).
-
-In some cases, Ruff includes a "direct" Rust port of the corresponding tool.
-We're grateful to the maintainers of these tools for their work, and for all
-the value they've provided to the Python community.
-
-Ruff's formatter is built on a fork of Rome's [`rome_formatter`](https://github.com/rome/tools/tree/main/crates/rome_formatter),
-and again draws on both API and implementation details from [Rome](https://github.com/rome/tools),
-[Prettier](https://github.com/prettier/prettier), and [Black](https://github.com/psf/black).
-
-Ruff's import resolver is based on the import resolution algorithm from [Pyright](https://github.com/microsoft/pyright).
-
-Ruff is also influenced by a number of tools outside the Python ecosystem, like
-[Clippy](https://github.com/rust-lang/rust-clippy) and [ESLint](https://github.com/eslint/eslint).
-
-Ruff is the beneficiary of a large number of [contributors](https://github.com/astral-sh/ruff/graphs/contributors).
-
-Ruff is released under the MIT license.
-
-## Who's Using Ruff?<a id="whos-using-ruff"></a>
-
-Ruff is used by a number of major open-source projects and companies, including:
-
-- [Albumentations](https://github.com/albumentations-team/albumentations)
-- Amazon ([AWS SAM](https://github.com/aws/serverless-application-model))
-- Anthropic ([Python SDK](https://github.com/anthropics/anthropic-sdk-python))
