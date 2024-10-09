@@ -278,37 +278,3 @@ ruff check --select F401 --select F403 --quiet
 ```
 
 The remaining configuration options can be provided through a catch-all `--config` argument:
-
-```shell
-ruff check --config "lint.per-file-ignores = {'some_file.py' = ['F841']}"
-```
-
-To opt in to the latest lint rules, formatter style changes, interface updates, and more, enable
-[preview mode](https://docs.astral.sh/ruff/rules/) by setting `preview = true` in your configuration
-file or passing `--preview` on the command line. Preview mode enables a collection of unstable
-features that may change prior to stabilization.
-
-See `ruff help` for more on Ruff's top-level commands, or `ruff help check` and `ruff help format`
-for more on the linting and formatting commands, respectively.
-
-## Rules<a id="rules"></a>
-
-<!-- Begin section: Rules -->
-
-**Ruff supports over 800 lint rules**, many of which are inspired by popular tools like Flake8,
-isort, pyupgrade, and others. Regardless of the rule's origin, Ruff re-implements every rule in
-Rust as a first-party feature.
-
-By default, Ruff enables Flake8's `F` rules, along with a subset of the `E` rules, omitting any
-stylistic rules that overlap with the use of a formatter, like `ruff format` or
-[Black](https://github.com/psf/black).
-
-If you're just getting started with Ruff, **the default rule set is a great place to start**: it
-catches a wide variety of common errors (like unused imports) with zero configuration.
-
-<!-- End section: Rules -->
-
-Beyond the defaults, Ruff re-implements some of the most popular Flake8 plugins and related code
-quality tools, including:
-
-- [autoflake](https://pypi.org/project/autoflake/)
